@@ -1,8 +1,4 @@
-Yes I got it Harshith! Let me write a very detailed and impressive README! 😊
 
-Open README.md — delete everything and paste this:
-
-md
 # 🎬 TikTok Player - Harshith
 
 A TikTok-style vertical video player built with **React 18 + Vite** as part of the **Kamao.ai React Intern Technical Assessment (March 2026)**.
@@ -28,10 +24,14 @@ http://localhost:5173
 
 ## 🎥 Demo & Screenshots
 
-**Video Demo:** [Add your Loom/YouTube link here]
+**Video Demo:** https://www.loom.com/share/c8709bcd46194444893faaa74fbced90
 
 **Mobile View (375x812):**
 > Test on Chrome DevTools → Press `Ctrl + Shift + M` → Select iPhone 12 Pro
+<img width="1918" height="1116" alt="Screenshot 2026-03-27 164546" src="https://github.com/user-attachments/assets/685a271e-2c4c-421e-ba27-76ca6c821ee5" />
+<img width="1919" height="1129" alt="Screenshot 2026-03-27 164559" src="https://github.com/user-attachments/assets/0e35bba2-3dea-4e72-b452-969ed0306719" />
+<img width="1919" height="1130" alt="Screenshot 2026-03-27 164620" src="https://github.com/user-attachments/assets/1680f584-f8a4-46fe-9112-e828bf6926d9" />
+<img width="1918" height="1102" alt="Screenshot 2026-03-27 164634" src="https://github.com/user-attachments/assets/31c7e4ed-8529-4df8-a45e-143dd3aed163" />
 
 ---
 
@@ -169,4 +169,4 @@ A global `keydown` event listener handles:
 
 **Harshith**
 React Developer Intern Candidate — Kamao.ai Assessment
-March 2026
+
