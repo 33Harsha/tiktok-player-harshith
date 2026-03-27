@@ -4,7 +4,11 @@
 
 This app replicates the core TikTok experience — full-screen vertical video feed, smooth scroll snapping, interactive overlays, and polished animations — all built **from scratch** without any external video libraries.
 
----
+## 🎥 Video Demo
+
+👉 **[Watch Demo on Loom](https://www.loom.com/share/c8709bcd46194444893faaa74fbced90)**
+
+
 ## 📦 Large File Handling (Git LFS)
 
 This project includes video assets (`.mp4`) that are managed using **Git LFS (Large File Storage)** to maintain repository performance and avoid GitHub file size limitations.
