@@ -10,6 +10,7 @@ A TikTok-style vertical video player built with **React 18 + Vite** as part of t
 This app replicates the core TikTok experience — full-screen vertical video feed, smooth scroll snapping, interactive overlays, and polished animations — all built from scratch without any external video libraries.
 
 ---
+**Video Demo:** https://www.loom.com/share/c8709bcd46194444893faaa74fbced90
 
 ## 🚀 Quick Start
 
