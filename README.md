@@ -12,6 +12,7 @@ npm install && npm run dev
 Then open your browser at:
 
 http://localhost:5173
+
 🎥 Demo & Screenshots
 Video Demo: https://www.loom.com/share/c8709bcd46194444893faaa74fbced90
 
@@ -19,8 +20,6 @@ Mobile View (375x812):
 
 Test on Chrome DevTools → Press Ctrl + Shift + M → Select iPhone 12 Pro
 
-
-Screenshot 2026-03-27 164546 Screenshot 2026-03-27 164559 Screenshot 2026-03-27 164620 Screenshot 2026-03-27 164634
 ✅ Features Implemented
 Core Features (All Required Features ✅)
 Feature	Status
