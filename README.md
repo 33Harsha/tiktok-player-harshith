@@ -1,202 +1,189 @@
-🎬 TikTok Player - Harshith
-A TikTok-style vertical video player built with React 18 + Vite as part of the Kamao.ai React Intern Technical Assessment (March 2026).
+# 🎬 TikTok Player — Harshith
 
-This app replicates the core TikTok experience — full-screen vertical video feed, smooth scroll snapping, interactive overlays, and polished animations — all built from scratch without any external video libraries.
+> A TikTok-style vertical video player built with **React 18 + Vite** for the **Kamao.ai React Intern Technical Assessment (March 2026).**
 
-Video Demo: https://www.loom.com/share/c8709bcd46194444893faaa74fbced90
+This app replicates the core TikTok experience — full-screen vertical video feed, smooth scroll snapping, interactive overlays, and polished animations — all built **from scratch** without any external video libraries.
 
-🚀 Quick Start
-Run the entire app with a single command:
+---
+## 📦 Large File Handling (Git LFS)
 
-npm install && npm run dev
-Then open your browser at:
+This project includes video assets (`.mp4`) that are managed using **Git LFS (Large File Storage)** to maintain repository performance and avoid GitHub file size limitations.
 
-http://localhost:5173
+### 🔧 Why Git LFS?
 
-🎥 Demo & Screenshots
-Video Demo: https://www.loom.com/share/c8709bcd46194444893faaa74fbced90
+* Standard Git is not optimized for large binary files
+* GitHub has a 100MB file size limit for regular Git tracking
+* Git LFS replaces large files with lightweight pointers and stores actual files separately
 
-Mobile View (375x812):
+### 🚀 How it works
 
-Test on Chrome DevTools → Press Ctrl + Shift + M → Select iPhone 12 Pro
+* All `.mp4` files are tracked via Git LFS
+* When you clone the repository, Git LFS automatically downloads the actual video files
 
-✅ Features Implemented
-Core Features (All Required Features ✅)
-Feature	Status
-Full-screen vertical layout (one video per viewport)	✅ Done
-Smooth scroll-snap navigation (up = next, down = previous)	✅ Done
-5 sample videos (travel, sports, cinematic)	✅ Done
-Infinite loop — after last video loops back to first	✅ Done
-Auto-play when video scrolls into view	✅ Done
-Auto-pause when video scrolls away	✅ Done
-Tap to play/pause with fade-out icon overlay	✅ Done
-Progress bar showing elapsed time at bottom	✅ Done
-Like ❤️ button with count + tap animation	✅ Done
-Comment 💬 button with count	✅ Done
-Share ↗️ button with count	✅ Done
-Bookmark 🔖 button	✅ Done
-Username + description overlay at bottom-left	✅ Done
-Description truncated to 2 lines with 'more' expand	✅ Done
-Spinning music disc at bottom-right	✅ Done
-Mute / Unmute sound toggle button	✅ Done
-Bonus Features (All Optional Features ✅)
-Feature	Status
-Double-tap to like — large heart animation in center	✅ Done
-Follow / Following toggle button on user avatar	✅ Done
-Long-press to pause, release to resume	✅ Done
-Video loading skeleton (shimmer effect while buffering)	✅ Done
-Keyboard navigation — Arrow Up/Down to scroll, Space to play/pause	✅ Done
-Dark mode / Light mode toggle	✅ Done
-Responsive design — works on mobile (375x812) and desktop	✅ Done
-🏗️ Project Structure
+### 📥 Setup Instructions (Important)
 
-**Video Demo:** https://www.loom.com/share/c8709bcd46194444893faaa74fbced90
+Make sure Git LFS is installed before cloning:
 
-**Mobile View (375x812):**
-> Test on Chrome DevTools → Press `Ctrl + Shift + M` → Select iPhone 12 Pro
+```id="9rj2oe"
+git lfs install
+git clone <repo-url>
+```
+
+If videos do not load, run:
+
+```id="d6g4xn"
+git lfs pull
+```
+
+### ⚠️ Note
+
+* Without Git LFS installed, only pointer files will be downloaded instead of actual videos
+* Ensure proper setup to experience full functionality of the application
+
+## 🎥 Video Demo
+
+👉 **[Watch Demo on Loom](https://www.loom.com/share/c8709bcd46194444893faaa74fbced90)**
+
+---
 <img width="1918" height="1116" alt="Screenshot 2026-03-27 164546" src="https://github.com/user-attachments/assets/685a271e-2c4c-421e-ba27-76ca6c821ee5" />
 <img width="1919" height="1129" alt="Screenshot 2026-03-27 164559" src="https://github.com/user-attachments/assets/0e35bba2-3dea-4e72-b452-969ed0306719" />
 <img width="1919" height="1130" alt="Screenshot 2026-03-27 164620" src="https://github.com/user-attachments/assets/1680f584-f8a4-46fe-9112-e828bf6926d9" />
 <img width="1918" height="1102" alt="Screenshot 2026-03-27 164634" src="https://github.com/user-attachments/assets/31c7e4ed-8529-4df8-a45e-143dd3aed163" />
 
+## ⚡ Quick Start
+```bash
+npm install && npm run dev
+```
+
+Open → **http://localhost:5173**
+
 
 
 ## ✅ Features Implemented
 
-### Core Features (All Required Features ✅)
+### Core Features — All Required ✅
 
 | Feature | Status |
 |--------|--------|
-| Full-screen vertical layout (one video per viewport) | ✅ Done |
-| Smooth scroll-snap navigation (up = next, down = previous) | ✅ Done |
-| 5 sample videos (travel, sports, cinematic) | ✅ Done |
-| Infinite loop — after last video loops back to first | ✅ Done |
-| Auto-play when video scrolls into view | ✅ Done |
-| Auto-pause when video scrolls away | ✅ Done |
-| Tap to play/pause with fade-out icon overlay | ✅ Done |
-| Progress bar showing elapsed time at bottom | ✅ Done |
-| Like ❤️ button with count + tap animation | ✅ Done |
-| Comment 💬 button with count | ✅ Done |
-| Share ↗️ button with count | ✅ Done |
-| Bookmark 🔖 button | ✅ Done |
-| Username + description overlay at bottom-left | ✅ Done |
-| Description truncated to 2 lines with 'more' expand | ✅ Done |
-| Spinning music disc at bottom-right | ✅ Done |
-| Mute / Unmute sound toggle button | ✅ Done |
+| Full-screen vertical layout (one video per viewport) | ✅ |
+| Smooth scroll-snap navigation (up = next, down = previous) | ✅ |
+| 5 sample videos (travel, sports, cinematic) | ✅ |
+| Infinite loop — after last video loops back to first | ✅ |
+| Auto-play when video scrolls into view | ✅ |
+| Auto-pause when video scrolls away | ✅ |
+| Tap to play/pause with fade-out icon overlay (~1 second) | ✅ |
+| Progress bar showing elapsed time at bottom | ✅ |
+| Like ❤️ with count + tap animation | ✅ |
+| Comment 💬 with count | ✅ |
+| Share ↗️ with count | ✅ |
+| Bookmark 🔖 | ✅ |
+| Username + description overlay at bottom-left | ✅ |
+| Description truncated to 2 lines with 'more' expand | ✅ |
+| Spinning music disc at bottom-right | ✅ |
+| Mute / Unmute sound toggle | ✅ |
 
-### Bonus Features (All Optional Features ✅)
+### Bonus Features — All Optional ✅
 
 | Feature | Status |
 |--------|--------|
-| Double-tap to like — large heart animation in center | ✅ Done |
-| Follow / Following toggle button on user avatar | ✅ Done |
-| Long-press to pause, release to resume | ✅ Done |
-| Video loading skeleton (shimmer effect while buffering) | ✅ Done |
-| Keyboard navigation — Arrow Up/Down to scroll, Space to play/pause | ✅ Done |
-| Dark mode / Light mode toggle | ✅ Done |
-| Responsive design — works on mobile (375x812) and desktop | ✅ Done |
+| Double-tap to like — large heart animation in center | ✅ |
+| Follow / Following toggle on user avatar | ✅ |
+| Long-press to pause, release to resume | ✅ |
+| Video loading skeleton (shimmer effect while buffering) | ✅ |
+| Keyboard navigation — Arrow Up/Down + Space | ✅ |
+| Dark mode / Light mode toggle | ✅ |
+| Responsive design — mobile (375×812) + desktop | ✅ |
 
+---
 
 ## 🏗️ Project Structure
-
+```
 tiktok-player-harshith/
 ├── public/
-│   └── videos/
-│       ├── places.mp4.mp4       → Switzerland travel video 1
-│       ├── places1.mp4.mp4      → Switzerland travel video 2
-│       ├── boxing.mp4.mp4       → Sports video 1
-│       ├── coding.mp4.mp4       → Sports video 2
-│       └── movie.mp4.mp4        → Cinematic movie scene
+│   └── videos/              → Sample video files
 ├── src/
 │   ├── components/
-│   │   ├── VideoCard.jsx        → Main video card with all overlays
-│   │   ├── ActionBar.jsx        → Like, Comment, Share, Bookmark buttons
-│   │   ├── UserInfo.jsx         → Username, avatar, description overlay
-│   │   └── MusicDisc.jsx        → Spinning music disc animation
+│   │   ├── VideoCard.jsx    → Main video + all overlays
+│   │   ├── ActionBar.jsx    → Like, Comment, Share, Bookmark
+│   │   ├── UserInfo.jsx     → Username + description
+│   │   └── MusicDisc.jsx   → Spinning music disc
 │   ├── data/
-│   │   └── videos.js            → Sample video data array
-│   ├── App.jsx                  → Main feed + keyboard navigation
-│   ├── index.css                → All global styles
-│   └── main.jsx                 → React entry point
+│   │   └── videos.js       → Sample video data array
+│   ├── App.jsx             → Main feed + keyboard navigation
+│   ├── index.css           → All global styles
+│   └── main.jsx            → React entry point
 ├── index.html
 ├── package.json
-├── vite.config.js
-└── README.md
-🛠️ Tech Stack & Tooling
-Technology	Purpose
-React 18	UI framework — functional components + hooks only
-Vite 8	Build tool — fast HMR and dev server
-Plain CSS	Styling — no external UI libraries
-HTML5 <video>	Native video element — no react-player or video.js
-IntersectionObserver API	Detect which video is currently visible
-useState, useRef, useEffect	State and lifecycle management
-🔧 Tech Choices & Rationale
-Why Vite over Create React App?
-Vite offers significantly faster startup and hot module replacement compared to CRA. For a prototype under a tight deadline, fast feedback loops matter.
+└── vite.config.js
+```
 
-Why Plain CSS over Tailwind?
-Plain CSS gives full control over animations (spinning disc, heart pop, shimmer skeleton) without needing to configure a Tailwind compiler. It also keeps the bundle lightweight.
+---
 
-Why IntersectionObserver?
-IntersectionObserver is the most performant way to detect which video is in the viewport. It runs off the main thread and doesn't cause layout thrashing unlike scroll event listeners.
+## 🛠️ Tech Stack
 
-Why scroll-snap-type: y mandatory?
-Native CSS scroll snapping gives buttery smooth transitions without any JavaScript animation logic. It's hardware-accelerated and works perfectly on both mobile and desktop.
+| Technology | Purpose |
+|-----------|---------|
+| **React 18** | UI — functional components + hooks only |
+| **Vite** | Build tool — fast HMR and dev server |
+| **Plain CSS** | Styling — full control, no UI libraries |
+| **HTML5 `<video>`** | Native video — no react-player or video.js |
+| **IntersectionObserver** | Detect which video is visible |
+| **useState + useRef + useEffect** | State and lifecycle management |
 
-Why useRef for video elements?
-Direct DOM access via useRef avoids unnecessary re-renders when controlling video playback. Calling .play() and .pause() on the video element directly is the correct React pattern for imperative DOM APIs.
+---
 
-⚙️ How Key Features Work
-Auto-play / Auto-pause
-Each VideoCard uses an IntersectionObserver with a threshold: 0.7 — meaning the video only plays when 70% of it is visible. When it goes out of view, it pauses automatically.
+## 🔧 Tech Choices & Rationale
 
-Double-tap to Like
-A tap counter with a 250ms timer distinguishes between single tap (play/pause) and double tap (like animation). Double tap triggers a large heart animation using CSS @keyframes.
+**Why Vite?**
+Faster startup and HMR compared to CRA — critical for tight deadlines.
 
-Long-press to Pause
-onMouseDown / onTouchStart starts a 500ms timer. If held longer than 500ms, video pauses. On onMouseUp / onTouchEnd, video resumes.
+**Why Plain CSS over Tailwind?**
+Full control over custom animations (spinning disc, heart pop, shimmer skeleton) without needing a compiler setup.
 
-Infinite Loop
-The currentIndex uses modulo arithmetic:
+**Why IntersectionObserver?**
+Most performant way to detect viewport visibility — runs off main thread, no scroll event jank.
 
-Next: (currentIndex + 1) % videos.length
-Previous: (currentIndex - 1 + videos.length) % videos.length
-Keyboard Navigation
-A global keydown event listener handles:
+**Why scroll-snap-type: y mandatory?**
+Native CSS snapping is hardware-accelerated and gives buttery smooth transitions without JavaScript animation logic.
 
+**Why useRef for video elements?**
+Direct DOM access avoids unnecessary re-renders when calling `.play()` and `.pause()`.
 
-ArrowDown → next video
-ArrowUp → previous video
-Space → play/pause
-⚠️ Known Limitations & Trade-offs
-Stock videos from Pexels don't include audio — mute/unmute button works correctly but audio depends on the video source
-On desktop the app is centered with max-width for the best mobile-first experience
-Comments and Share buttons show counts but don't open a modal (out of scope for this assessment)
-👨‍💻 Author
-Harshith React Developer Intern Candidate — Kamao.ai Assessment
+---
 
-### Infinite Loop
-The `currentIndex` uses modulo arithmetic:
+## ⚙️ How Key Features Work
+
+**Auto-play / Auto-pause**
+Each VideoCard uses IntersectionObserver with `threshold: 0.7` — video plays only when 70% visible, pauses when it leaves view.
+
+**Double-tap to Like**
+A tap counter with 250ms timer distinguishes single tap (play/pause) from double tap (like animation).
+
+**Long-press to Pause**
+`onMouseDown` starts a 500ms timer — if held longer, video pauses. `onMouseUp` resumes playback.
+
+**Infinite Loop**
+Modulo arithmetic on currentIndex:
 - Next: `(currentIndex + 1) % videos.length`
 - Previous: `(currentIndex - 1 + videos.length) % videos.length`
 
-### Keyboard Navigation
-A global `keydown` event listener handles:
+**Keyboard Navigation**
+Global `keydown` listener:
 - `ArrowDown` → next video
 - `ArrowUp` → previous video
 - `Space` → play/pause
 
+---
 
+## ⚠️ Known Limitations
 
-⚠️ Known Limitations & Trade-offs
+- Stock videos may not include audio — mute/unmute button works correctly
+- On desktop, app is centered with max-width for mobile-first experience
+- Comment and Share buttons show counts but don't open modals (out of scope)
 
-- Stock videos from Pexels don't include audio — mute/unmute button works correctly but audio depends on the video source
-- On desktop the app is centered with `max-width` for the best mobile-first experience
-- Comments and Share buttons show counts but don't open a modal (out of scope for this assessment)
+---
 
+## 👨‍💻 Author
 
-
-👨‍💻 Author
-
-Harshith
-React Developer Intern Candidate — Kamao.ai Assessment
+**Harshith**
+React Developer Intern Candidate — Kamao.ai Assessment — March 2026
